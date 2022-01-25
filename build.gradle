@@ -17,9 +17,6 @@ task clean(type: Delete) {
 apply plugin: "com.dropbox.affectedmoduledetector"
 affectedModuleDetector {
     baseDir = "${project.rootDir}"
-    pathsAffectingAllModules = [
-            "buildSrc/"
-    ]
     compareFrom = "PreviousCommit"
     logFolder = "${project.rootDir}"
 }
